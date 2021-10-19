@@ -1,0 +1,55 @@
+data LocalizedData {
+    ConvertFrom-StringData @'
+    ErrorConnectToMVPPortal=An Error occured when attempting to connect to the portal. Details: '{0}'
+    ErrorNestedMVPActivity=Nested MVPActivity. MVPActivity is only requried for the top-level declaration. Refer to usage.
+    ErrorMissingMVPActivityArea=Missing 'Area' Statement.
+    ErrorMissingMVPActivityAreaMultiple=Multiple Statements of 'Area' was detected. Only a single instance is permitted.
+    ErrorMissingMVPActivityContributionArea=Missing 'ContributionArea' Statement.
+    ErrorExceedMVPActivityContributionArea=Exceeded 'ContributionArea' Limit. Limit is 2. Count was '{0}'.
+    ErrorMissingMVPActivityValue=Missing 'Value' Statement.
+    ErrorMissingActivityType=Unable to enumerate ActivityTypes from source HTML.
+    ErrorMissingContributionType=Unable to enumerate ContributionAreas from source HTML.
+    ErrorMissingDriver=Missing Selinum Driver. Use: ConnectTo-Selenium to connect.
+    ErrorTryTentitiveCommand=Try-TentativeCommand: Exceeded Retry Limit.
+    ErrorMissingSelectedValue=The Parameter '-SelectedValue' value '{0}', could not be found
+    ErrorTooManySelectedValue=The Parameter '-SelectedValue' value '{0}', returned too many items. Count '{1}'
+    ErrorJavaScriptTimeout=Javascript Timeout.
+    ErrorNoActivityButton=Cannot Select Add New Activity Button.
+    ErrorAreaNotNested=Error. 'Area' is not nested within MVPActivity.
+    ErrorContributionAreaNotNested=Error. 'ContributionArea' is not nested within MVPActivity.
+    ErrorHTMLFormStructureDefaultParameter=Error. The 'default' Parameter Value is prohibited.
+    ErrorHTMLFormStructureMissingName=Error. Could not match name '{0}' with HTMLFormStructure.
+    ErrorCannotFindHTMLElement=Error. Could not match HTML element '{0}' with HTMLFormStructure.
+    ErrorTooManyHTMLElements=Error. Too many results with HTML element '{0} with HTMLFormStructure. Count '{1}'
+    ErrorFieldValidationError=Error. A field validation error was found within the form. Error: '{0}'"
+    ErrorMissingRequiredEntries=Error. Missing Required HTML Fields: '{0}'
+    ErrorMissingMVPActivityInCallStack=Error. '{0}' can only be called from within MVPActivity.
+    ErrorFormattingValue=Error. There was an error raised when attempting to format '{0}' with '{1}'. Error Message: {2}
+    ErrorSavingMVPActivity=Error. There was an error raised when attempting to save the MVP activity. Error: '{0}'
+    ErrorSelectingDropDown=Error. There was an error raised when attempting to select the dropDown '{0}' with the value: '{1}'. Error: '{2}'
+    ErrorStopMVPActivity=Error. There was an error raised when attempting to cancel the MVP activity. Error: '{0}'
+    ErrorAreaFailure=Error. Could not set MVP Area within HTML Form, unable to continue.
+    ErrorTestCSVSchemaMissingCSVFile="Missing CSV File: '{0}'"
+    ErrorTestCSVSchemaImportCSVFile=An error occured when importing the CSV File: Error '{0}'
+    ErrorTestCSVSchemaMissingColumns=Error. Validation Failed: Missing Columns '{0}'
+    ErrorTestCSVSchemaDifferentAreaColumn=Formatting Error. Validation Failed: Cannot have different Areas ('{0}') within the same CSV File.
+    ErrorTestCSVSchemaDuplicateContributionArea=Duplicate Contribution Area Found with SecondContributionArea and ThirdContributionArea columns within the CSV File. Please correct this issue and try again!
+    ErrorParseValueCheck=Parser Check Failed. Please ensure that 'Value' has the correct names added that are appropriate for the respective 'Area'. Please run "Get-AreaNamedValues -AreaName '{0}'" to get correct 'Value' names. Alternatively, you can run: 'New-MVPFixture -AreaName '{0}' to generate an example template.
+    ErrorParseContributionAreaCheck=Parser Check Failed. Please ensure that 'ContributionArea' has the correct names added. Please run "Get-Help ContributionArea" for a list of valid Contribution Areas.
+    WarningEntryWasNotSaved=An Error occured when attempting to add the entry. THE ENTRY WAS NOT SAVED.
+    ElementIdActivityType=activityTypeSelector 
+    ElementIdContributionArea=select_contributionAreasDDL
+    ElementButtonNewActivity=addNewActivityBtn
+    ElementButtonCancelActivity=submitCloseButton
+    ElementButtonSubmitActivity=submitActivityButton
+    ElementValueArticle=e36464de-179a-e411-bbc8-6c3be5a82b68
+    ElementValueChefPuppetInDataCenter=b803f4ef-066b-e511-810b-fc15b428ced0
+    ElementFieldValidationError=field-validation-error
+    VariableSaveActivitySleepCounter=SaveActivitySleepCounter
+    TestActivityRegexMVPActivity=^MVPActivity
+    TestActivityRegexMVPArea=^Area
+    TestActivityRegexMVPContributionArea=^ContributionArea
+    TestActivityRegexMVPValue=^Value
+    ConnectToMVPPortalRegexURLMatch=^https:\/\/login\.((microsoftonline)|(live))\.com
+'@
+}
